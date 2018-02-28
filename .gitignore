@@ -17,3 +17,6 @@
 /yarn-error.log
 
 .byebug_history
+
+# Remove secrets.yml from our commits
+/config/secrets.yml
