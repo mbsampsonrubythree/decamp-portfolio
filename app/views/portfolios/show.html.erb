@@ -8,5 +8,7 @@
   <br>
   <%= link_to "Edit", edit_portfolio_path(@portfolio_item.id) %>
   <br>
+  <%= link_to "Delete", portfolio_path(@portfolio_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+  <br>
   <%= link_to "Home", portfolios_path %>
 </div>

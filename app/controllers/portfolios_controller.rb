@@ -18,6 +18,20 @@ class PortfoliosController < ApplicationController
     # http://localhost:3000/portfolios/2/edit
   end
 
+  def destroy
+    @portfolio_item = Portfolio.find(params[:id])
+    # Store the item to destroy
+
+    @portfolio_item.destroy
+    # Destroy/delete the record
+
+    # Redirect to portfolios#index
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: "Portfolio was destroyed." }
+    end
+  end
+
+
   def update
     @portfolio_item = Portfolio.find(params[:id])
 

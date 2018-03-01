@@ -10,6 +10,7 @@
     <br>
     <%= link_to "Edit Item", edit_portfolio_path(portfolio_item.id)%>
     <br>
+    <%= link_to "Delete Item", portfolio_path(portfolio_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
     <hr>
   <% end %>
 </div>
