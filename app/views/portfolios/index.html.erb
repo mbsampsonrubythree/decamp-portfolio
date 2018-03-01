@@ -1,0 +1,9 @@
+<h1>Welcome to the Portfolios index page!</h1>
+
+<!-- Loops over each portfolio item -->
+<% @portfolio_items.each do |portfolio_item| %>
+  <p><%= portfolio_item.title %></p>
+  <p><%= portfolio_item.subtitle %></p>
+  <p><%= portfolio_item.body %></p>
+  <%= image_tag portfolio_item.thumb_image %>
+<% end %>
