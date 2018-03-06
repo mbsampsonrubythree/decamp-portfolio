@@ -39,4 +39,10 @@ end
   )
 end
 
+3.times do |technology|
+ Portfolio.last.technologies.create!(
+   name: "Tech #{technology}"
+ )
+end
+
 puts "Generated seeds"
