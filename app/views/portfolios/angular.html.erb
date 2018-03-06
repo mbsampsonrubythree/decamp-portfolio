@@ -1,0 +1,16 @@
+<h1>Welcome to the Portfolios index page!</h1>
+
+<!-- Loops over each portfolio item -->
+<div style="border: 1px solid black; margin: 5%; padding: 2.5%">
+  <% @angular_items.each do |portfolio_item| %>
+    <h3><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item.id) %></h3>
+    <p><%= portfolio_item.subtitle %></p>
+    <p><%= portfolio_item.body %></p>
+    <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
+    <br>
+    <%= link_to "Edit Item", edit_portfolio_path(portfolio_item.id)%>
+    <br>
+    <%= link_to "Delete Item", portfolio_path(portfolio_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+    <hr>
+  <% end %>
+</div>

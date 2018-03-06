@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # This change makes more logical sense since we're showing a singular
   # portfolio item when we navigate to through this route.
 
+  get 'angular', to: 'portfolios#angular'
 
   get 'about-us', to: 'pages#about'
   # Navigating to:    localhost:3000/about-us
