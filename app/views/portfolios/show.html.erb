@@ -1,4 +1,4 @@
-<div style="margin: 5%; padding: 5%; border: 1px solid black; width: 500px; height: 500px; text-align: center;">
+<div style="margin: 5%; padding: 5%; border: 1px solid black; width: 500px; text-align: center;">
   <h1><%= @portfolio_item.title %></h1>
   <h3><%= @portfolio_item.subtitle %></h3>
   <br>
@@ -6,6 +6,10 @@
   <br>
   <%= image_tag @portfolio_item.thumb_image unless @portfolio_item.thumb_image.nil? %>
   <br>
+  <h4>Technologies Used</h4>
+  <% @portfolio_item.technologies.each do |t| %>
+    <span><%= t.name %> </span>
+  <% end %><br><br>
   <%= link_to "Edit", edit_portfolio_path(@portfolio_item.id) %>
   <br>
   <%= link_to "Delete", portfolio_path(@portfolio_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
