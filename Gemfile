@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use jQuery for Bootstrap
+gem 'jquery-rails' 
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -56,3 +59,6 @@ gem 'friendly_id', '~> 5.1.0'
 
 # Use Devise for authentication
 gem 'devise', '~> 4.4', '>= 4.4.1'
+
+# Use Bootstrap
+gem 'bootstrap', '~> 4.0.0'
