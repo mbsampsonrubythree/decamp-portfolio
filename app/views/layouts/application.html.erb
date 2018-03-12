@@ -15,12 +15,10 @@
 
     <%= render "shared/nav" %>
 
-    <%= login_container_helper %> 
+    <%= login_container_helper %>
 
     <%= yield %>
 
-    <% if session[:source] %>
-      <p>Thank you for visiting me from <%= session[:source] %>!</p>
-    <% end %>
+    <%= source_helper("application") %>
   </body>
 </html>
