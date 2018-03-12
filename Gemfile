@@ -56,3 +56,6 @@ gem 'friendly_id', '~> 5.1.0'
 
 # Use Devise for authentication
 gem 'devise', '~> 4.4', '>= 4.4.1'
+
+# Use Petergate for authorization purposes
+gem 'petergate', '~> 1.8', '>= 1.8.1'
