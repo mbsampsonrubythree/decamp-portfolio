@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   get 'angular', to: 'portfolios#angular'
 
-  get 'about-us', to: 'pages#about'
+  get 'about-us', to: 'pages#about', as: 'about_me'
   # Navigating to:    localhost:3000/about-us
   # renders.......    /view/pages/about.html.erb
 
