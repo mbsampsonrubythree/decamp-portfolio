@@ -3,7 +3,7 @@ module ApplicationHelper
     "<p>This is a helper!</p>".html_safe
   end
 
-  def login_container_helper(class_name)
+  def login_container_helper class_name = ''
     if current_user.is_a?(User)
       link_to "Logout", destroy_user_session_path, method: :delete, class: class_name
     else
