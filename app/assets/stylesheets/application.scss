@@ -131,3 +131,38 @@ div.cover-container.d-flex.h-100.p-3.mx-auto.flex-column {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+/*
+ * Custom Styles
+ */
+
+
+.card {
+  width: 100%;
+}
+
+.card-body {
+ color: black;
+}
+
+.login-card {
+  width: 34em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 2em;
+}
+
+.auth-links {
+  margin-top: 2em;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
+}
