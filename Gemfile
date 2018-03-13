@@ -59,3 +59,9 @@ gem 'devise', '~> 4.4', '>= 4.4.1'
 
 # Use Petergate for authorization purposes
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+
+# Use Bootstrap styling
+gem 'bootstrap', '~> 4.0.0'
+
+# Use jQuery as dependency for Bootstrap
+gem 'jquery-rails' 
