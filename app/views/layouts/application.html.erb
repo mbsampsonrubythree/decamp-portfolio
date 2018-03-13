@@ -12,15 +12,11 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%= render "shared/nav" %>
-
-    <%= login_container_helper %>
-
-    <%= yield %>
-
-    <%= source_helper("application") %>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <%= render "shared/application_nav" %>
+      <%= yield %>
+      <%= source_helper("application") %>
+      <%= render "shared/application_footer" %>
+    </div>
   </body>
 </html>

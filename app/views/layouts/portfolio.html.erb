@@ -13,9 +13,9 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= render "shared/nav" %>
+    <%= render "shared/application_nav" %>
 
-    <%= login_container_helper %>
+    <%= login_container_helper('nav-link') %>
 
     <%= yield %>
 
