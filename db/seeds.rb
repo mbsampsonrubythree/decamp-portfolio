@@ -4,7 +4,7 @@
   )
 end
 
-10.times do |blog|
+5.times do |blog|
   Blog.create!(
     title:  "My Blog Post #{blog}",
     body:   "Nulla purus dolor, posuere sed dolor at, euismod iaculis neque. Sed vitae rhoncus sem. Nulla facilisi. Ut odio lectus, vestibulum eget ornare sed, lobortis in risus. Praesent consequat scelerisque iaculis. Donec iaculis aliquam est a pellentesque. Proin pulvinar sit amet ipsum vehicula eleifend. Maecenas porta viverra viverra. Maecenas non lacinia enim, vel viverra ante. Etiam pellentesque bibendum volutpat.",

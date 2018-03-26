@@ -4,8 +4,10 @@ module ApplicationHelper
   end
 
   def login_container_helper class_name = '', button_group = false
-    if current_user.is_a?(User)
+    if current_user.is_a?(User) && button_group == false
       link_to "Logout", destroy_user_session_path, method: :delete, class: class_name
+    elsif current_user.is_a?(User) && button_group == true
+      link_to "Logout", destroy_user_session_path, method: :delete, class: "text-dark"
     else
       if button_group == true
         ('<div class="btn-group" role="group" aria-label="Basic Example">').html_safe +

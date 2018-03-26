@@ -6,6 +6,7 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all.shuffle
+    @feature_blog = Blog.all.shuffle.first
     @page_title = "My Blogs"
   end
 
