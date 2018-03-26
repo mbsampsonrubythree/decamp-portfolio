@@ -1,12 +1,22 @@
-<main role="main" class="inner cover">
-  <h1 class="cover-heading">Contact</h1>
-  <br>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.608838976432!2d-121.93003294888761!3d37.70538452382195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fec6c686b351f%3A0xe72c5568587d37ee!2sAmador+Plaza+Rd%2C+Dublin%2C+CA+94568!5e0!3m2!1sen!2sus!4v1520966376226" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  <p class="lead"><%= number_to_phone "1234567890" %></p>
-  <p class="lead">JHudgens@gmail.com</p>
-  <br>
-    <%= link_to "LinkedIn", '#', class: "btn btn-lg btn-secondary" %>
-    <%= link_to "GitHub", '#', class: "btn btn-lg btn-secondary" %>
-    <%= link_to "Codepen", '#', class: "btn btn-lg btn-secondary" %>
-  </p>
-</main>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <%= image_tag "person-icon.png", class: "contact-person-icon" %>
+      <p>Etiam sit amet arcu quis purus dictum auctor sit amet quis quam. Aliquam in arcu sem. Nam volutpat purus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus mi sapien, iaculis quis placerat vitae, dapibus at odio. Suspendisse potenti. Vestibulum vel feugiat neque. Nunc in finibus mi. Phasellus faucibus vestibulum tristique. Donec sodales convallis pharetra. Nullam at lorem tempus nisi dapibus luctus.</p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam in risus porta felis semper pulvinar. Vestibulum vel aliquam mi, at suscipit arcu. Praesent vel mollis est. Ut at ipsum auctor quam facilisis tincidunt. Ut interdum non arcu lacinia vestibulum. Proin feugiat egestas tortor, id tincidunt nisi iaculis a. Suspendisse dictum massa at neque mollis ultrices. Maecenas vel venenatis elit.</p>
+    </div>
+    <div class="col-lg-1">
+
+    </div>
+    <div class="col-lg-5">
+      <div class="card bg-dark" style="width: 25rem;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.608838976432!2d-121.93003294888761!3d37.70538452382195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fec6c686b351f%3A0xe72c5568587d37ee!2sAmador+Plaza+Rd%2C+Dublin%2C+CA+94568!5e0!3m2!1sen!2sus!4v1520966376226" width="400" height="400" frameborder="0" style="border:0" allowfullscreen class="card-img-top"></iframe>
+        <div class="card-body">
+          <h5 class="card-title text-light">Mauris Efficitur</h5>
+          <p class="card-text text-light">Donec vulputate nisl ac lacus lacinia ultricies. Nam maximus dapibus mauris at egestas. </p>
+          <a href="#" class="btn btn-light">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

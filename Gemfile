@@ -56,3 +56,9 @@ gem 'friendly_id', '~> 5.1.0'
 
 # Use Devise for authentication
 gem 'devise', '~> 4.4', '>= 4.4.1'
+
+# Use bootstrap for page styling
+gem 'bootstrap', '~> 4.0.0'
+
+# Use jquery as per bootstrap dependency
+gem 'jquery-rails'
